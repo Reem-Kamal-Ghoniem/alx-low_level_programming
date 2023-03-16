@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
  * main - this is main
+ * 
  * main prints message
- * returns zero
+ *
+ * Returns zero
  */
 int main(void)
 	{
