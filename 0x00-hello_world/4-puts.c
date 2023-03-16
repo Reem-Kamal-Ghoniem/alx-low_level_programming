@@ -1,12 +1,14 @@
 #include <stdio.h>
 /**
- * here is the main function
+ * main - this is main
+ * main prints message
+ * returns zero
  */
 int main(void)
 	{
 	puts("\"Programming is like building a multilingual puzzle");
 	/**
-	 * here is a return to end with zero
+	 *returns zero
 	 */
 	return (0);
 	}
