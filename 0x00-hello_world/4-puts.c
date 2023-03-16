@@ -2,15 +2,15 @@
 /**
  * main - this is main
  * 
- * main prints message
+ * prints message
  *
- * Returns zero
+ * Return: zero
  */
 int main(void)
 	{
 	puts("\"Programming is like building a multilingual puzzle");
 	/**
-	 *returns zero
+	 *returns nothing
 	 */
 	return (0);
 	}
