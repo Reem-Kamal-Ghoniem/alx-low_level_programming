@@ -7,18 +7,18 @@
  */
 int main(void)
 	{
-	int digit1, digit2;
+	int num1, num2;
 
-	for (digit1 = 0; digit1 < 10; digit1++)
+	for (num1 = 0; num1 < 10; num1++)
 	{
-		for (digit2 = 0; digit2 < 10; digit2++)
+		for (num2 = num1 + 1; num2 < 10; num2++)
 		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar((num2 % 10) + '0');
 
-			if (digit1 == 9 && digit2 == 9)
+			if (num1 == 9 && num2 == 9)
 				continue;
-			
+
 			putchar(',');
 			putchar(' ');
 		}
