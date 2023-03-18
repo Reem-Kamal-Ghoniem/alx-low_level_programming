@@ -8,7 +8,7 @@
 int main(void)
         {
 	int num;
-	int alph
+	int alph;
 
 	for (num = 0; num < 10; num++)
 		putchar('0' + num);
