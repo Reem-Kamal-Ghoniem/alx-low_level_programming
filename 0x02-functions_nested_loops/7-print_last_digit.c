@@ -13,5 +13,7 @@ int print_last_digit(int num)
 	int mod;
 
 	mod = num % 10;
+	if (mod < 0)
+		mod = mod * -1;
 	return (mod);
 }
