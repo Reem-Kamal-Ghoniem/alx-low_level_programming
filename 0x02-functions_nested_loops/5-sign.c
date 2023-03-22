@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _islower - a function that checks for lowercase character.
+* print_sign - a function that checks for lowercase character.
 *
 * @n: the input to be checked
 *
@@ -10,12 +10,12 @@
 
 int print_sign(int n)
 {
-	if (n > 1)
+	if (n > 0)
 	{
 		_putchar('+');
 		return (1);
 	}
-	else if (n < 1)
+	else if (n < 0)
 	{
 		_putchar('-');
 		return (-1);
