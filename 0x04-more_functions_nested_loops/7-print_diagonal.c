@@ -1,4 +1,4 @@
-#include "count.h"
+#include "main.h"
 
 /**
  * print_line - draws diagonal
