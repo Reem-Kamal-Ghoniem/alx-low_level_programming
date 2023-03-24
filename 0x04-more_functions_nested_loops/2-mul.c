@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _isdigit -  a function that checks for a digit 0-9
+ * mul -  a function that returns the multipy of two numbers
  * @a: input 1
  * @b: input 2
  * Return: the result of thier mult
  */
-int mul(int a, int b)
+int mul (int a, int b)
 {
 	return(a * b);
 }
