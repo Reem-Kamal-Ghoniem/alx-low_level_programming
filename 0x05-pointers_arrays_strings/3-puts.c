@@ -7,7 +7,7 @@
  */
 void _puts(char *str)
 {
-	long int i;
+	long unsigned int i;
 
 	for (i = 0; i <= strlen(str); i++)
 	{
