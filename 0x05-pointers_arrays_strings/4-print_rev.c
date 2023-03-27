@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _puts -  a function that prints a string, in reverse, followed by a new line.
+ * print_rev -  a function that prints a string, in reverse, followed by a new line.
  * @s: pointer to a string string
  * returns - void
  */
-void print_rev(char *s);
+void print_rev(char *s)
 {
 	int count = 0;
 
