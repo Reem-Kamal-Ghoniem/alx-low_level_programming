@@ -18,8 +18,8 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; !(s1[i] == '\0'); i++)
 		size1++;
 	for (i = 0; !(s2[i] == '\0'); i++)
-                size2++;
-	ptr = (char *)malloc(size1 + size2 + 2);
+		size2++;
+	ptr = (char *)malloc(size1 + size2 + 1);
 	if (ptr ==  NULL)
 	{
 		return (NULL);
