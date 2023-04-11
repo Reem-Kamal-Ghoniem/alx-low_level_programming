@@ -26,17 +26,18 @@ int main(int argc, char **argv)
 	{
 		while ( money != 0)
 		{
-		if (money >= 25)
-			money = money - 25, coins++;
-		else if money >= 10 && money < 25)
-			money = money - 10, coins++;
-		else if (money >= 5 && money < 10)
-			money = money - 5, coins++;
-		else if (money >= 2 && money < 5)
-			money = money - 2, coins++;
-		else (money == 1)
-			money = money -  1, coins++;
+			if (money >= 25)
+				money = money - 25, coins++;
+			else if (money >= 10 && money < 25)
+				money = money - 10, coins++;
+			else if (money >= 5 && money < 10)
+				money = money - 5, coins++;
+			else if (money >= 2 && money < 5)
+				money = money - 2, coins++;
+			else if (money == 1)
+				money = money -  1, coins++;
 		}
 	}
+	printf("%d\n", coins);
 	return (0);
 }
