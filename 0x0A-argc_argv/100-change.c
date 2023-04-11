@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 		printf("0\n");
 	else
 	{
-		while ( money != 0)
+		while (money != 0)
 		{
 			if (money >= 25)
 				money = money - 25, coins++;
