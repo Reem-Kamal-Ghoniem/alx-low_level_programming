@@ -13,13 +13,15 @@
 int main(int argc, char **argv)
 {
 	int coins = 0;
-	int money = atoi(argv[1]);
+	int money = 0;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	money = = atoi(argv[1]);
+
 	else if (atoi(argv[1]) < 0)
 		printf("0\n");
 	else
