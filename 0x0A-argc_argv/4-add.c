@@ -11,7 +11,7 @@
  **/
 int main(int argc, char **argv)
 {
-	int i;
+	int i, j;
 	int sum = 0;
 
 	if (argc == 1)
@@ -28,9 +28,10 @@ int main(int argc, char **argv)
 				printf("Error\n");
 				return (1);
 			}
+		}	
 			
 				sum += atoi(argv[i]);
 				printf("%d\n", sum);
-		}
+	}
 	return (0);
 }
