@@ -22,5 +22,5 @@ char **strtow(char *str)
 	words_count = (char **)malloc(sizeof(char *) * (count + 1));
 	if (words_count == NULL)
 		return (NULL);
-	return (woeds_count);
+	return (words_count);
 }
