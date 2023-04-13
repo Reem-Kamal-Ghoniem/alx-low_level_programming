@@ -35,6 +35,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 		for (j = size1; j < (size1 + size2); j++)
 			ptr[j] = s2[j - size1];
+		ptr[j] = '\0';
 	}
 	if (n < size2)
 	{
@@ -46,6 +47,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 		for (j = size1; j < (size1 + n); j++)
 			ptr[j] = s2[j - size1];
+		ptr[j] = '\0';
 	}
 	return (ptr);
 }
