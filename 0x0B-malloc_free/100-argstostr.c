@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * argstostr - Write a function that concatenates 
+ * argstostr - Write a function that concatenates
  * all the arguments of your program.
  * @ac: no. of arg
  * @av: pointer to argv
@@ -17,13 +17,13 @@ char *argstostr(int ac, char **av)
 	if ((ac == 0) || (av == NULL))
 		return (NULL);
 	for (j = 0; j < ac; j++)
-	 {	 
+	{
 	 for (i = 0; av[j][i] != '\0'; i++)
 		{
 			size++;
 		}
-	 }
-	str_new = (char *)malloc(size + 1);
+	}
+	str_new = (char *)malloc(size + ac + 1);
 	if (str_new ==  NULL)
 		return (NULL);
 	for (j = 0; j < ac; j++)
