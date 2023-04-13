@@ -8,7 +8,7 @@
  * Return: pointer to a pointer
  */
 char **strtow(char *str)
-{	int i; count = 0; words_count;
+{	int i, count = 0, words_count;
 
 	if (str == NULL || str == "")
 		return (NULL);
