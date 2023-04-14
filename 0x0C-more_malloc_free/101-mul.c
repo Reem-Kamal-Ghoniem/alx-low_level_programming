@@ -5,7 +5,8 @@
 #include <stdlib.h>
 /**
  * main - Entry point
- *
+ * @argc: no. of arg
+ * @agrv: pointer to arg
  * Return: void
  */
 int main(int argc, char *argv[])
