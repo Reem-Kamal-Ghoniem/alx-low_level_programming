@@ -1,4 +1,7 @@
+#include "main.h"
 #include <stdio.h>
+#include <string.h>
+#include <ctype>
 #include <stdlib.h>
 /**
  * main - Entry point
@@ -13,7 +16,7 @@ void main(void)
 
 	if (argc != 3 || isdigit(num1) || isdigit(num2))
 	{
-		printf("Erro\nr");
+		printf("Error\n");
 		exit(98);
 	}
 	else
