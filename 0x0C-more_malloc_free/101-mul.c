@@ -11,7 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int mul, num1, num2, i, j;
+	int num1, num2, i, j;
 
 	if (argc != 3 || isdigit(num1) || isdigit(num2))
 	{
