@@ -1,5 +1,6 @@
-#ifndef ABS
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
 
-#define ABS(x) ((x * x) / 2)
+#define ABS(x) ((x * x) / x)
 
 #endif
