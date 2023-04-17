@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * main -  prints the name of the file it was compiled from
+ * main -  prints the name of the file it was compiled from 
+ * Description: prints the name of the file
  * return: 0
  */
 int main(void)
