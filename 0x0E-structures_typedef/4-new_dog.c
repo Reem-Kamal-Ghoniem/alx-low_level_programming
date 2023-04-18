@@ -24,17 +24,17 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (poppy == NULL)
 		return (NULL);
 
-	 poppy->name = malloc(namelen);
+	 poppy->name = malloc(namelen * sizeof(poppy->name);
         if (poppy == NULL)
                 return (NULL);
-	for (i = 0; i <= namelen; i++)
+	for (i = 0; i < namelen; i++)
 		(*poppy).name[i] = name[i];
 	(*poppy).age = age;
 
-	poppy->owner = malloc(ownlen);
+	poppy->owner = malloc(ownlen * sizeof(poppy->owner);
 	if (poppy == NULL)
 		return (NULL);
-	for (i = 0; i <= ownlen; i++)
+	for (i = 0; i < ownlen; i++)
 		poppy->owner[i] = owner[i];
 
 	return (poppy);
