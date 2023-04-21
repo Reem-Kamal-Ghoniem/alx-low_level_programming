@@ -9,6 +9,6 @@
  */
 void print_all(const char * const format, ...)
 {
-	if (format == null)
+	if (format == NULL)
 		return;
 }
