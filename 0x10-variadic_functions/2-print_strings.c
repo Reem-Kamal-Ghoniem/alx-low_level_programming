@@ -2,7 +2,7 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * print_numbers - function that prints strings, followed by a new line.
+ * print_strings - function that prints strings, followed by a new line.
  * @separator: the string in between
  * @n: arguments number
  * Return: void
