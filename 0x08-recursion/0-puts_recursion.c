@@ -5,7 +5,7 @@
  *@s: array of strings
  *Returns: void
  */
- void _puts_recursion(char *s)
+void _puts_recursion(char *s)
 {
 	if (*s)
 	{
