@@ -6,7 +6,7 @@
  */
 int factorial(int n)
 {
-	int next = 0, out = 0, fact = 0;
+	int out = 0, fact = 0;
 
 	if (n == 0)
 		return (1);
