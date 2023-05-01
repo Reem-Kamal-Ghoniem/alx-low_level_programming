@@ -1,8 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-
 /**
  *_puts_recursion -  a function that prints a string,
  *followed by a new line
@@ -13,7 +9,7 @@
 {
 	if (*s)
 	{
-		_putchar(s[0]);
+		_putchar(*(s));
 		s++;
 		_puts_recursion(s);
 	}
