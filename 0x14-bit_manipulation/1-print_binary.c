@@ -15,6 +15,7 @@ void print_binary(unsigned long int n)
 			bin[i] = '1';
 		else
 			bin[i] = '0';
+		n = (n >> 1);
 	}
 	for (index = i; index >= 0; index--)
 		_putchar(bin[index] + '0');
