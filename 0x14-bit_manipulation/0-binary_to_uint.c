@@ -7,7 +7,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int index, i, base = 1;
+	int index, base = 1;
 	unsigned int unit;
 
 	if (!b)
@@ -18,10 +18,11 @@ unsigned int binary_to_uint(const char *b)
 		if (b[index] != '0' && b[index] != '1')
 			return (0);
 	}
-	for (i = index; index; index--)
+	while (index)
 	{
 		unit += ((b[index - 1] - '0') * base);
 		base *= 2;
+		index--;
 	}
 	return (unit);
 }
