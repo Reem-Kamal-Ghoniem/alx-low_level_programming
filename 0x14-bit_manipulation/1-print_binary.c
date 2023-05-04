@@ -7,7 +7,7 @@
 void print_binary(unsigned long int n)
 {
 	int i, index;
-	char *bin;
+	char *bin = NULL;
 
 	for (i = 0; n != 1; i++)
 	{
