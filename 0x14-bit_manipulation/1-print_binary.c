@@ -6,17 +6,12 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i, index;
-	char *bin = NULL;
+	unsigned long out;
 
-	for (i = 0; n != 1; i++)
+	out = n;
+	if (out > 1)
 	{
-		if (n % 2)
-			bin[i] = '1';
-		else
-			bin[i] = '0';
-		n = (n >> 1);
+		print_binary(out >> 1);
 	}
-	for (index = i; index >= 0; index--)
-		_putchar(bin[index] + '0');
+	_putchar((out & 1) + '0');
 }
