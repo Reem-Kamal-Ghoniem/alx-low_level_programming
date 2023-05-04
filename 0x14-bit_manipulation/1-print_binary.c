@@ -16,6 +16,6 @@ void print_binary(unsigned long int n)
 		else
 			bin[i] = '0';
 	}
-	for ( index = i; index >= 0; index--)
+	for (index = i; index >= 0; index--)
 		_putchar(bin[index] + '0');
 }
