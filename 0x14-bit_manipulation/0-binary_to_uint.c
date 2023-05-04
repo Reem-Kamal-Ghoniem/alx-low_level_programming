@@ -9,13 +9,14 @@ unsigned int binary_to_uint(const char *b)
 {
 	int index, i, base = 1;
 	unsigned int unit;
+
 	if (!b)
 		return (0);
 
 	for (index = 0; b[index]; index++)
 	{
-			if (b[index] != '0' && b[index] != '1')
-				return (0);
+		if (b[index] != '0' && b[index] != '1')
+			return (0);
 	}
 	for (i = index; index; index--)
 	{
