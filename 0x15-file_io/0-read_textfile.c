@@ -20,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	file1 = open(filename, O_RDONLY);
 	file2 = read(file1, c, letters);
-	file3 = write(POSIX, c, letters);
+	file3 = write(STDOUT_FILENO, c, letters);
 
 	if (file1 == -1 || file2 == -1 || file3 == -1 || file3 != file2)
 	{
