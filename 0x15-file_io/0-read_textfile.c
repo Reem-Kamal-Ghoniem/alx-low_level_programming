@@ -11,6 +11,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t file1, file2, file3;
 	char *c;
 
+	if (filename ==NULL)
+		return (0);
+
 	c = malloc(letters);
 	if (c ==  NULL)
 		return (0);
