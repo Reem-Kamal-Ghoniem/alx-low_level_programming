@@ -19,10 +19,19 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	file1 = open(filename, O_RDONLY);
+	if (file1 == -1)
+	{
+		free(c);
+		return (0);
+	}
 	file2 = read(file1, c, letters);
+	if (file2 == -1)
+	{
+		free(c);
+		return (0);
+	}
 	file3 = write(STDOUT_FILENO, c, letters);
-
-	if (file1 == -1 || file2 == -1 || file3 == -1 || file3 != file2)
+	if (file3 == -1 || file3 != file2)
 	{
 		free(c);
 		return (0);
