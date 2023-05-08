@@ -11,7 +11,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t file1, file2, file3;
 	char *c;
 
-	if (filename ==NULL)
+	if (filename == NULL)
 		return (0);
 
 	c = malloc(letters);
@@ -20,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	file1 = open(filename, O_RDONLY);
 	file2 = read(file1, c, letters);
-	file3 = write(1, c, letters);
+	file3 = write(POSIX, c, letters);
 
 	if (file1 == -1 || file2 == -1 || file3 == -1 || file3 != file2)
 	{
