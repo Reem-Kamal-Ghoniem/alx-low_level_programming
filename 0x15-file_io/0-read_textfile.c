@@ -30,7 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(c);
 		return (0);
 	}
-	file3 = write(STDOUT_FILENO, c, letters);
+	file3 = write(STDOUT_FILENO, c, file2);
 	if (file3 == -1 || file3 != file2)
 	{
 		free(c);
