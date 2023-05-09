@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int from, to, read_from = 1, write_to;
-	char buf[size];
+	char buf[BUFSIZE];
 	mode_t Permissions = S_IRUSR | S_IWUSR | S_IWGRP | S_IRGRP | S_IROTH;
 
 	if (argc != 3)
@@ -18,33 +18,33 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
-	from = open(av[1], O_RDONLY);
+	from = open(argv[1], O_RDONLY);
 	if (from == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 
-	to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, Permissions);
+	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, Permissions);
 	if (to == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 
 	while (read_from)
 	{
-		read_from = read(from, buf, size);
+		read_from = read(from, buf, BUFSIZE);
 		if (read_from == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
 
 		write_to = write(to, buf, read_from);
-		if (write_from != read_from || write_to == -1)
+		if (write_to != read_from || write_to == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
 	}
