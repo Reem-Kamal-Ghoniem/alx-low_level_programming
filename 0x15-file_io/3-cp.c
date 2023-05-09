@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int from, to, read_from = 1, write_to;
-	char buf[BUFSIZE];
+	char buf[BUFSIZ];
 	mode_t Permissions = S_IRUSR | S_IWUSR | S_IWGRP | S_IRGRP | S_IROTH;
 
 	if (argc != 3)
