@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
 	while (read_from)
 	{
-		read_from = read(from, buf, BUFSIZE);
+		read_from = read(from, buf, BUFSIZ);
 		if (read_from == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
